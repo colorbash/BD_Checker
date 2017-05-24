@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolsClass</class>
+ <widget class="QDialog" name="ToolsClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>261</width>
+    <height>517</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Настройки</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Приветствие при входе</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Предупреждить о ДР за</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="days_warn_le">
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>дня</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Оповещения </string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QComboBox" name="motifications_cb">
+        <item>
+         <property name="text">
+          <string>Каждый день</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Каждую неделю</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Отключено</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="day_of_week_lb">
+        <property name="text">
+         <string>День недели</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="day_of_week_cb">
+        <item>
+         <property name="text">
+          <string>Понедельник</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Вторник</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Среда</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Четверг</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Пятница</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Суббота</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Воскресенье</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="time_lb">
+        <property name="text">
+         <string>Время</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTimeEdit" name="timeEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="add_person_pb">
+     <property name="text">
+      <string>Добавить Запись</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="credits_pb">
+     <property name="text">
+      <string>Создатели Суперпроги</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="close_pb">
+     <property name="text">
+      <string>Закрыть Суперпрогу :-(</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="ok_pb">
+       <property name="text">
+        <string>Принять</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancel_pb">
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
